@@ -55,6 +55,7 @@
             </intent-filter>
         </activity>
 
+        <!--app link-->
         <activity
             android:name="com.iflyrec.studyjetpack.navigation.NavigationActivity"
             android:label="NavigationActivity">
@@ -75,7 +76,16 @@
                 <data android:host="www.iflyrec.com" />
                 <data android:pathPrefix="/fragment4" />
             </intent-filter>
+        </activity>
 
+        <activity
+            android:name="com.iflyrec.studyjetpack.workmanager.WorkManagerActivity"
+            android:label="WorkManagerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
     </application>
