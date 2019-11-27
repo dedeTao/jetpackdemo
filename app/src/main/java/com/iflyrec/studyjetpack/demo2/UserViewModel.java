@@ -21,6 +21,10 @@ public class UserViewModel extends AndroidViewModel {
         super(application);
     }
 
+    public UserViewModel(Application application, String param) {
+        super(application);
+    }
+
     public MutableLiveData<UserInfo> getAccount() {
         return mutableLiveData;
     }

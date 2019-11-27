@@ -1,6 +1,5 @@
 package com.iflyrec.studyjetpack.demo2;
 
-import android.app.Application;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -28,12 +27,15 @@ public class Demo2Activity extends AppCompatActivity {
         setContentView(R.layout.activity_demo2);
         initViewModel();
         initView();
-
-
     }
 
     private void initViewModel() {
         mViewModel = ViewModelProviders.of(this).get(UserViewModel.class);
+
+//        mViewModel = ViewModelProviders
+//                .of(this, new MyViewModelFactory(getApplication(), "123"))
+//                .get(UserViewModel.class);
+
     }
 
     private void initView() {
