@@ -21,10 +21,6 @@ public class UserViewModel extends AndroidViewModel {
         super(application);
     }
 
-    public void setUser(String name, String age, String phone) {
-        mutableLiveData.setValue(new UserInfo(name, age, phone));
-    }
-
     public MutableLiveData<UserInfo> getAccount() {
         return mutableLiveData;
     }

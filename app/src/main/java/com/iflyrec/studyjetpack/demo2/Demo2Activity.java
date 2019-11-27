@@ -42,7 +42,7 @@ public class Demo2Activity extends AppCompatActivity {
         mTxtButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mViewModel.getAccount().setValue(new UserInfo("Taodede：" + System.currentTimeMillis(), "18", "13012341234"));
+                mViewModel.getAccount().setValue(new UserInfo("Taodede：" + System.currentTimeMillis(), "18", "13939399438"));
             }
         });
 

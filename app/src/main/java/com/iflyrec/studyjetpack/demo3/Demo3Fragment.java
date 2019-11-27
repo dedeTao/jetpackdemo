@@ -39,7 +39,8 @@ public class Demo3Fragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mViewModel.getUserInfoModel().setValue(new UserInfo("Taodede：" + System.currentTimeMillis(), "18", "13012341234"));
+                mViewModel.getUserInfoModel()
+                        .setValue(new UserInfo("twq：" + System.currentTimeMillis(), "18", "13838389438"));
             }
         });
     }
